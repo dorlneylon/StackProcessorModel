@@ -1,0 +1,68 @@
+{
+    "memory_ops": {
+        "LD":    "1000XXXX",
+        "ST":    "1001XXXX",
+        "STPOP": "1001XXXX",
+        "POP":   "10100000",
+        "XCHG":  "10110000",
+        "PUSH0": "10110010",
+        "PUSH1": "10110001",
+        "PUSHN": "10110100"
+    },
+    "IO_ops": {
+        "IN":  "11000XXX",
+        "OUT": "11001XXX"
+    },
+    "Workflow_ops": {
+        "JMP":  "11010000",
+        "CALL": "11010001",
+        "RET":  "11010010",
+        "LOOP": "11010011",
+        "BEQ":  "11010100",
+        "BLESS":"11010101",
+        "BPOS": "11010110",
+        "BNEG": "11010110",
+        "RESERVE": "11010111"
+    },
+    "memory_operations": [
+        "ld",
+        "st",
+        "stpop"
+    ],
+    "IO_operations": [
+        "in", 
+        "out"
+    ],
+    "workflow_operations": [
+        "jmp",
+        "call",
+        "ret",
+        "loop", 
+        "beq", "bless", "bpos", "bneg", 
+        "reserve",
+        "hlt"
+    ],
+    "integer_operations": [
+        "iadd", "isub", "imul", "idiv", "imod", "iabs", "iinc", "idec", "ineg", "itof"
+      ],
+    "float_operations": [
+        "fadd", "fsub", "fmul", "fdiv", "fabs", "fsqrt", "ftan", "fatan", "fpow2", "ftoi"
+      ],
+    "logical_operations": [
+        "land", "lxor", "lor", "lnot", "lrol", "lror", "lshl", "lshr"
+      ],
+    "stack_operations": [
+        "dup", "swap", "xchg", "pop", "push0", "push1", "pushn"
+    ],
+    "commands": [
+        "ld","st", "stpop", "in", "out", "jmp", "call", 
+        "ret", "loop", "beq", "bless", "bpos", "bneg", 
+        "reserve", "hlt", "iadd", "isub", "imul", "idiv", 
+        "imod", "iabs", "iinc", "idec", "ineg", "itof", 
+        "fadd", "fsub", "fmul", "fdiv", "fabs", "fsqrt", 
+        "ftan", "fatan", "fpow2", "ftoi", "land", "lxor", 
+        "lor", "lnot", "lrol", "lror", "lshl", "lshr", "dup",
+        "swap", "xchg", "pop", "push0", "push1", "pushn"
+        
+    ]
+}
